@@ -26,7 +26,7 @@
 /* inizio header */
 header {
     background-color: black;
-    height: 30px;
+    height: 35px;
 }
 button {
     padding: 3px;
@@ -34,7 +34,7 @@ button {
 }
 /* inizio main */
 main {
-    height: calc(100vh - 80px);
+    height: calc(100vh - 135px);
     width: 100%;
     overflow-y: scroll;
     display: flex;
@@ -44,10 +44,12 @@ main {
 }
 .container {
     position: relative;
+    align-self: flex-start;
 }
 img {
     height: 200px;
     width: 300px;
+    margin: 2px;
 }
 .user {
     background-color: rgba(0, 0, 0, 0.411);
@@ -55,3 +57,44 @@ img {
     position: absolute;
     bottom: 0;
 }
+
+/* inizio footer */
+footer {
+    flex-basis: 100px;
+    background-color: black;
+    color: white;
+  }
+  
+  .control-panel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .controls {
+    display: flex;
+    align-items: center;
+  }
+  
+  .control {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .control i {
+    margin-bottom: 5px;
+  }
+  
+  .end-meeting {
+    align-self: stretch;
+  }
+  
+  .end-meeting button {
+    color: red;
+    border: 0;
+    background-color: darkslategray;
+    height: 100%;
+    padding: 0px 10px;
+  }
